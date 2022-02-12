@@ -99,7 +99,7 @@
         };
 
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LdC7lkeAAAAAHf-wuSFAO4aDmayU-g5UMxz1bLz', { action: 'Login' }).then(function (token) {
+            grecaptcha.execute('SECRET', { action: 'Login' }).then(function (token) {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         });
@@ -110,7 +110,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Registration</title>
-	<script src="https://www.google.com/recaptcha/api.js?render=6LdC7lkeAAAAAHf-wuSFAO4aDmayU-g5UMxz1bLz"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=SECRET"></script>
 </head>
 <body>
     <form id="form1" runat="server">

@@ -208,7 +208,7 @@ namespace _203330R_AS
         protected int Fail_Count(string email)
         {
             System.Diagnostics.Debug.WriteLine("Fail Count");
-            int fc = 0;
+            int failcount = 0;
             SqlConnection con = new SqlConnection(AccountString);
             string sql = "SELECT failcount FROM AccountDB WHERE Email=@USERID";
             SqlCommand cmd = new SqlCommand(sql, con);
@@ -224,7 +224,7 @@ namespace _203330R_AS
                         {
                             if (reader["failcount"] != DBNull.Value)
                             {
-                                fc = (int)reader["failcount"];
+                                failcount = (int)reader["failcount"];
                             }
                         }
                     }
@@ -238,7 +238,7 @@ namespace _203330R_AS
             {
                 con.Close();
             }
-            return fc;
+            return failcount;
         }
 
         protected DateTime getDateTime(string email)

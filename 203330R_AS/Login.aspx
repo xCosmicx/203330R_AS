@@ -39,6 +39,6 @@
          <br />
         <asp:Button ID="login" OnClick="Button1_Click" Text="Login" runat="server" />
     </form>
-    <h5><a href="Registration.aspx">Click here to Login</a></h5>
+    <h5><a href="Registration.aspx">Click here to Register</a></h5>
 </body>
 </html>

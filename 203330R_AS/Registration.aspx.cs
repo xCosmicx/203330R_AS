@@ -173,7 +173,7 @@ namespace _203330R_AS
             else
             {
                 System.Diagnostics.Debug.WriteLine("Bot");
-                registerAccount();
+                Response.Redirect("Homepage.aspx");
             }
         }
 

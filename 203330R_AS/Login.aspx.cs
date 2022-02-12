@@ -96,10 +96,7 @@ namespace _203330R_AS
                             DateTime failDate = DateTime.Now;
                             countfail = 10;
                             UpdateFail_Count(email, countfail, failDate);
-
                         }
-                        accountFeedback.Text = "Invalid Email and/or Password and/or PIN!";
-                        accountFeedback.ForeColor = Color.Red;
                     }
                 }
             }
